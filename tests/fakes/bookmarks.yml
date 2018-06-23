@@ -1,0 +1,29 @@
+main.user@gmail.com:
+  urls:
+    - url: https://www.google.com
+      read: false
+      labels:
+        - search
+    - url: https://www.mukirana.com
+      read: True
+      labels:
+        - search
+shared:
+  other.user+1@gmail.com:
+    urls:
+      - url: https://www.github.com
+        read: True
+        labels:
+          - repository
+          - git
+      - url: https://www.facebook.com
+        read: True
+        labels:
+          - social useless media
+  other.user+2@gmail.com:
+    urls:
+      - url: https://www.gitlab.com
+        read: false
+        labels:
+          - repository
+          - git
