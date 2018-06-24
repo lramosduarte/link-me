@@ -2,7 +2,8 @@ import argparse
 
 from collections import namedtuple
 
-from linkme.commands.unread import exibe_arquivos_nao_lidos
+from linkme.commands.unread import exibe_links_nao_lidos
+from linkme.commands.upload import upload_file
 
 
 Args = namedtuple('Args', ['positionals', 'optionals', 'command'])
@@ -20,14 +21,14 @@ ARGS_POSITIONALS = (
         optionals={
             'help': 'Show unread links on bookmarks.',
         },
-        command=lambda: 'TODO',
+        command=exibe_links_nao_lidos,
     ),
     Args(
         positionals='upload',
         optionals={
             'help': 'Send bookmarks file to destination specified by uploader engine.',
         },
-        command=lambda: 'TODO',
+        command=upload_file,
     ),
 )
 
