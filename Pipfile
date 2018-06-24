@@ -5,11 +5,15 @@ name = "pypi"
 
 [packages]
 pyyaml = "*"
+requests = "*"
+pytest-cov = "*"
 
 [dev-packages]
 ipython = "*"
 ipdb = "*"
 pytest = "*"
+pylint = "*"
+"flake8" = "*"
 
 [requires]
 python_version = "3.6"

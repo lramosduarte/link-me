@@ -32,6 +32,8 @@ ARGS_POSITIONALS = (
     ),
 )
 
+ACTIONS = {arg.positionals: arg.command for arg in ARGS_POSITIONALS}
+
 
 class InitiatorArgs:
     DADOS_INICIAIS_ARGS = {
